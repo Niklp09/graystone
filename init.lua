@@ -39,7 +39,7 @@ minetest.register_craft({
 })
 
 minetest.register_node("graystone:smooth_stone", {
-    description = S("Smooth Stone"),
+    description = ("Smooth Stone"),
     tiles = {"smoothstone.png"},
     groups = {cracky = 2, stone = 1},
     sounds = default.node_sound_stone_defaults(),
