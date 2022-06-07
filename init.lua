@@ -1,3 +1,5 @@
+--Light Gray Stone Brick
+
 minetest.register_node("graystone:light_gray_block", {
 	description = "Light Gray Stone Brick",
 	tiles = {"graystone.png"},
@@ -21,6 +23,8 @@ if minetest.get_modpath("moreblocks") then
     })
 end
 
+--Brick
+
 minetest.register_node("graystone:brick", {
 	description = "Brick",
 	tiles = {"graystone_brick.png"},
@@ -37,6 +41,17 @@ minetest.register_craft({
 		{"basic_materials:wet_cement", "default:clay_brick"},
 	},
 })
+
+if minetest.get_modpath("moreblocks") then
+    stairsplus:register_all("moreblocks", "graystone:brick", "graystone:brick", {
+        description = "Brick",
+        tiles = {"graystone_brick.png"},
+        groups = {cracky = 2, stone =1},
+        sounds = default.node_sound_stone_defaults(),
+    })
+end
+
+-- Smooth Stone
 
 minetest.register_node("graystone:smooth_stone", {
     description = ("Smooth Stone"),
