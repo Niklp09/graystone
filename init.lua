@@ -23,7 +23,7 @@ if minetest.get_modpath("moreblocks") then
     })
 end
 
-walls.register("graystone:light_gray_block", ("Light Gray Stone Brick Wall"), {"graystone.png"},
+walls.register("graystone:light_gray_block_wall", ("Light Gray Stone Brick Wall"), {"graystone.png"},
     "graystone:light_gray_block", default.node_sound_stone_defaults())
 
 --Brick
@@ -54,7 +54,7 @@ if minetest.get_modpath("moreblocks") then
     })
 end
 
-walls.register("graystone:brick", ("Brick Wall"), {"graystone_brick.png"},
+walls.register("graystone:brick_wall", ("Brick Wall"), {"graystone_brick.png"},
     "graystone:brick", default.node_sound_stone_defaults())
 
 -- Smooth Stone
@@ -81,5 +81,5 @@ if minetest.get_modpath("moreblocks") then
     })
 end
 
-walls.register("graystone:smooth_stone", ("Smooth Stone Wall"), {"smoothstone.png"},
+walls.register("graystone:smooth_stone_wall", ("Smooth Stone Wall"), {"smoothstone.png"},
     "graystone:smoothstone", default.node_sound_stone_defaults())
