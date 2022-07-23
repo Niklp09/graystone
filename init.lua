@@ -18,7 +18,7 @@ if minetest.get_modpath("moreblocks") then
     stairsplus:register_all("moreblocks", "graystone:light_gray_block", "graystone:light_gray_block", {
         description = "Light Gray Stone Brick",
         tiles = {"graystone.png"},
-        groups = {cracky = 3},
+        groups = {cracky = 2, stone = 1},
         sounds = default.node_sound_stone_defaults(),
     })
 end
@@ -49,7 +49,7 @@ if minetest.get_modpath("moreblocks") then
     stairsplus:register_all("moreblocks", "graystone:brick", "graystone:brick", {
         description = "Brick",
         tiles = {"graystone_brick.png"},
-        groups = {cracky = 2, stone =1},
+        groups = {cracky=2, crumbly=2, choppy=2},
         sounds = default.node_sound_stone_defaults(),
     })
 end
@@ -76,10 +76,10 @@ if minetest.get_modpath("moreblocks") then
     stairsplus:register_all("moreblocks", "graystone:smooth_stone", "graystone:smooth_stone", {
         description = "Light Gray Stone Brick",
         tiles = {"smoothstone.png"},
-        groups = {cracky = 2, stone =1},
+        groups = {cracky = 2, stone = 1},
         sounds = default.node_sound_stone_defaults(),
     })
 end
 
 walls.register("graystone:smooth_stone_wall", ("Smooth Stone Wall"), {"smoothstone.png"},
-    "graystone:smoothstone", default.node_sound_stone_defaults())
+    "graystone:smooth_stone", default.node_sound_stone_defaults())
