@@ -31,9 +31,7 @@ walls.register("graystone:light_gray_block_wall", ("Light Gray Stone Brick Wall"
 minetest.register_node("graystone:brick", {
 	description = "Brick",
 	tiles = {"graystone_brick.png"},
-	paramtype2 = "facedir",
 	groups = {cracky=2, crumbly=2, choppy=2},
-	is_ground_content = false,
 	sounds = default.node_sound_stone_defaults(),
 })
 
